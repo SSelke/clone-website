@@ -42,7 +42,8 @@ nav.navbar{
 	margin: 0;
 	height: 52px;
 	background-color: white;
-	box-shadow: 0px 4px 0px 4px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 2px 20px 2px rgba(0, 0, 0, 0.5);
+	z-index: 1;
 	border: none;
 }
 
@@ -85,10 +86,6 @@ div#wrapper-nav{
 }
 
 ul.options{
- 	height: 52px;
- }
-
-ul.options li{
  	height: 52px;
  }
 
@@ -206,6 +203,142 @@ div#bs-nav-demo{
 	width: 100%;
 	margin: 0 !important;
 }
+
+.splash-schedule{
+	position: absolute;
+	bottom: -82px;
+	margin: 0 auto;
+	width: 100%;
+	height: 165px;
+	z-index: 1;
+}
+
+.splash-schedule a:hover{
+	text-decoration: none;
+}
+
+#block-schedule{
+	width: 550px;
+	height: 160px;
+	margin: 0 auto;
+	padding: 20px 0px 20px 30px;
+	border-radius: 15px;
+	background-image: linear-gradient(rgb(255, 213, 30), rgb(223, 184, 27)); 
+}
+
+#block-schedule p:nth-child(1){
+	color: rgb(116, 96, 10);
+	font-size: 24px;
+	line-height: 31px;
+}
+
+#block-schedule p:nth-child(2){
+	color: rgb(48, 48, 48);
+	font-size: 38px;
+	font-weight: 700;
+	line-height: 41px;
+}
+
+#block-schedule p:nth-child(3){
+	color: #fff;
+	font-size: 18px;
+	line-height: 25px;
+}
+
+
+#block-schedule i{
+	display: block;
+	position: relative;
+	top: -90px;
+	float: right;
+	padding-right: 20px;
+	font-size: 40px;
+	color: #fff;
+}
+
+/*//START OF SERVICES BLOCK//*/
+
+section#services .container{
+	width: 1300px; 
+}
+
+.repair{
+	margin-top: 80px;
+	background-image: url('https://morrisjenkins.com/uploads/Modules/_560xAUTO_crop_center-center/service.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 15px;
+	width: 600px;
+	height: 250px;
+}
+
+.repair-text{
+	position: absolute;
+	bottom: 0;
+	width: 600px;
+	height: 60px;
+	padding: 10px 30px 19px 20px;
+	background-color: rgb(0, 77, 142);
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+
+.repair-text span{
+	font-size: 24px;
+	color: #fff;
+	font-weight: 700;
+	float: left;
+}
+
+.repair-text i{
+	font-size: 24px;
+	margin-top: 5px;
+	color: #fff;
+	float: right;
+}
+
+.troubleShoot{
+	margin-top: 80px;
+	background-image:url('https://morrisjenkins.com/uploads/Modules/_560xAUTO_crop_center-center/module-troubleshoot.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 15px;
+	width: 600px;
+	height: 250px;
+}
+
+.troubleShoot-text{
+	position: absolute;
+	bottom: 0;
+	width: 600px;
+	height: 60px;
+	padding: 10px 30px 19px 20px;
+	background-color: rgb(0, 77, 142);
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+
+.troubleShoot-text span{
+	font-size: 24px;
+	color: #fff;
+	font-weight: 700;
+	float: left;
+}
+
+.troubleShoot-text i{
+	font-size: 24px;
+	margin-top: 5px;
+	color: #fff;
+	float: right;
+}
+
+.specials{
+	margin-top: 80px; 
+	background-image: url(https://morrisjenkins.com/img/promo-furnace-bg.jpg);
+	height: 216px;
+	border-radius: 15px;
+}
+
 
 
 
