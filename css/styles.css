@@ -7,32 +7,12 @@
 }
 
 html,body{
-	background-color: #003e7a;
+	background-color: #003e7a !important;
 }
 
 img{
 	width: 290px;
 	height: 128.33px;
-}
-
-header {
-    background-image: url('../img/home-banner.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 610px;
-}
-
-section{
-	height: 710px;
-	width: 100%;
-	background-color: #fff;
-	color: black;
-}
-
-footer{
-	height: 500px;
-	width: 100%;
-	background-color: rgb(226, 226, 226);
 }
 
 /*//NAVBAR STYLING//*/
@@ -87,7 +67,27 @@ div#wrapper-nav{
 
 ul.options{
  	height: 52px;
- }
+}
+
+ul.dropdown-menu{
+	margin-top: 1px !important;
+	padding: 0 !important;
+}
+
+.divider{
+	margin: 0 !important;
+}
+
+ul.dropdown-menu li a{
+	height: 40px;
+	padding-top: 10px !important;
+	color: #004d8e;
+}
+
+ul.dropdown-menu li a:hover{
+	background-color: #004d8e !important;
+	color: #fff;
+}
 
 .image-a{
 	display: block;
@@ -153,191 +153,242 @@ div#bs-nav-demo{
 	line-height: 32px;
 }
 
-/*//START OF SPLASH PAGE//*/
-
 .wrapper{
-	background: #003e7a;
-}
-
-.splash{
+	max-width: 1600px;
+	width: 100%;
+	height: 100%;
 	margin: 0 auto;
-	padding: 0 !important;
-	width: 100% !important;
-	max-width: 1650px !important;
 }
 
-.splash-statement{
-	width: 740px;
-	height: 333px;
+header{
+	width: 100%;
+	height: 635px;
+	background-color: rgb(0, 77, 142);
+}
+
+.background{
+	width: 100%;
+	height: 100%;
+	background-image: url('https://morrisjenkins.com/uploads/Banners/home-banner.jpg');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+}
+
+.inner{
+	position: relative;
+	bottom: -120px;
+	left: -50px;
+}
+
+.statement{
 	background-color: rgba(0, 31, 63, 0.75);
 	border-radius: 15px;
-	position: relative;
-	top: 50%;
-	left: 120px;
-	transform: translateY(-50%);
-	padding: 48px;
-	font-size: 24px;
+	padding: 38px 48px;
+}
+
+.statement h1{
 	color: #fff;
-}
-
-.splash-statement h1{
-	font-weight: 700;
 	font-size: 48px;
-
+	font-weight: 700;
+	line-height: 52.8px;
+	padding-bottom: 20px;
+	font-size-adjust: 100%;
 }
 
-.splash-statement a{
-	color: #b3d9ff;
+.statement p{
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 32px;
+	color: #fff;
+	font-size-adjust: 100%;
+}
+
+.statement p a{
+	display: block;
 	font-size: 18px;
+	font-weight: 400;
+	line-height: 30px;
+	color: rgb(179, 217, 255);
 	text-decoration: underline;
+	font-size-adjust: 100%;
 }
 
-.splash-statement a:hover{
-	color: #b3d9ff;
-	font-size: 18px;
-	text-decoration: underline;
+.statement p a:hover{
+	color: rgb(179, 217, 255);
 }
 
-.row{
-	max-width: 1640px;
-	width: 100%;
-	margin: 0 !important;
-}
-
-.splash-schedule{
-	position: absolute;
-	bottom: -82px;
-	margin: 0 auto;
-	width: 100%;
-	height: 165px;
+.schedule{
+	position: relative;
 	z-index: 1;
-}
-
-.splash-schedule a:hover{
-	text-decoration: none;
-}
-
-#block-schedule{
-	width: 550px;
-	height: 160px;
 	margin: 0 auto;
-	padding: 20px 0px 20px 30px;
+	margin-top: 80px;
+	padding: 40px 80px 40px 30px;
+	max-width: 550px;
 	border-radius: 15px;
 	background-image: linear-gradient(rgb(255, 213, 30), rgb(223, 184, 27)); 
 }
 
-#block-schedule p:nth-child(1){
+.schedule a:hover, a:link{
+	text-decoration: none !important;
+}
+
+.schedule span{
+	display: block;
+}
+
+.schedule span:nth-child(1){
 	color: rgb(116, 96, 10);
 	font-size: 24px;
 	line-height: 31px;
+	font-size-adjust: 100%;
 }
 
-#block-schedule p:nth-child(2){
+.schedule span:nth-child(2){
+	padding-bottom: 3px;
 	color: rgb(48, 48, 48);
 	font-size: 38px;
 	font-weight: 700;
 	line-height: 41px;
+	font-size-adjust: 100%;
 }
 
-#block-schedule p:nth-child(3){
+.schedule span:nth-child(3){
 	color: #fff;
 	font-size: 18px;
 	line-height: 25px;
+	font-size-adjust: 100%;
 }
 
-
-#block-schedule i{
-	display: block;
-	position: relative;
-	top: -90px;
-	float: right;
-	padding-right: 20px;
-	font-size: 40px;
-	color: #fff;
+section{
+	width: 100%;
+	height: 800px;
+	background-color: #fff;
 }
 
-/*//START OF SERVICES BLOCK//*/
-
-section#services .container{
-	width: 1300px; 
+footer{
+	width: 100%;
+	height: 500px;
+	background-color: rgb(226, 226, 226);
 }
 
-.repair{
-	margin-top: 80px;
-	background-image: url('https://morrisjenkins.com/uploads/Modules/_560xAUTO_crop_center-center/service.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	border-radius: 15px;
-	width: 600px;
+.box{
+	width: 100%;
 	height: 250px;
+	margin-top: 40px;
+	border-radius: 15px;
+	color: #fff;
+	font-size: 24px;
+	font-weight: 700;
 }
 
-.repair-text{
-	position: absolute;
-	bottom: 0;
-	width: 600px;
-	height: 60px;
-	padding: 10px 30px 19px 20px;
+.banner{
+	position: relative;
+	bottom: -82%;
+	height: 65px;
 	background-color: rgb(0, 77, 142);
 	border-bottom-right-radius: 15px;
 	border-bottom-left-radius: 15px;
 }
 
-.repair-text span{
-	font-size: 24px;
-	color: #fff;
-	font-weight: 700;
-	float: left;
+.banner:hover{
+	background-color: #003e7a;
+	text-decoration: none;
 }
 
-.repair-text i{
-	font-size: 24px;
-	margin-top: 5px;
+.banner span{
+	position: relative;
+	left: 20px;
+	top: 12px;
 	color: #fff;
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.banner i{
+	position: relative;
+	top: 18px;
+	left: -10px;
 	float: right;
+	font-size: 30px;
+	font-weight: 400;
+	color: #fff;
+}
+
+.box:hover{
+	transform: scale(.99);
+	transition: 0.1s ease-in;
+}
+
+.service{
+	background-image:url('https://morrisjenkins.com/uploads/Modules/_560xAUTO_crop_center-center/service.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .troubleShoot{
-	margin-top: 80px;
 	background-image:url('https://morrisjenkins.com/uploads/Modules/_560xAUTO_crop_center-center/module-troubleshoot.jpg');
-	background-size: cover;
 	background-repeat: no-repeat;
-	border-radius: 15px;
-	width: 600px;
-	height: 250px;
+	background-size: cover;
 }
 
-.troubleShoot-text{
-	position: absolute;
-	bottom: 0;
-	width: 600px;
-	height: 60px;
-	padding: 10px 30px 19px 20px;
-	background-color: rgb(0, 77, 142);
-	border-bottom-right-radius: 15px;
-	border-bottom-left-radius: 15px;
-}
-
-.troubleShoot-text span{
-	font-size: 24px;
-	color: #fff;
-	font-weight: 700;
-	float: left;
-}
-
-.troubleShoot-text i{
-	font-size: 24px;
-	margin-top: 5px;
-	color: #fff;
-	float: right;
-}
-
-.specials{
-	margin-top: 80px; 
+.special{
 	background-image: url(https://morrisjenkins.com/img/promo-furnace-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 15px;
+	margin-top: 80px;
+	padding: 15px 0px 20px 40px;
+	width: 100%;
 	height: 216px;
+}
+
+.special:hover{
+	transform: scale(.99);
+	transition: 0.1s ease-in;
+}
+
+.special h3{
+	font-size: 24px;
+	line-height: 31.2px;
+	color: rgb(116, 96, 10);
+	font-weight: 400;
+}
+
+.special p{
+	color: rgb(48, 48, 48);
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 52.8px;
+}
+
+.blue{
+	color: rgb(0, 77, 142);
+}
+
+.footer-box{
+	width: 100%;
+	height: 350px;
+	margin-top: 20px;
 	border-radius: 15px;
 }
+
+.priority{
+	background-image:url('https://morrisjenkins.com/uploads/Modules/_560xAUTO_crop_center-center/pay-online-bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.priority:hover{
+	transform: scale(.99);
+	transition: 0.1s ease-in;
+}
+
+.contact{
+	background-image: url(https://morrisjenkins.com/img/footer-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 
 
 
