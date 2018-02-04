@@ -136,6 +136,11 @@ div#bs-nav-demo{
 	color: white;
 	text-align: center;
 }
+
+.navbar-right a#button-a:hover{
+	background-image: linear-gradient(rgb(223, 184, 27), rgb(223, 184, 27));
+}
+
 #phone{
 	margin-top: 20px;
 	padding: 16px 32px 16px 10px;
@@ -177,11 +182,12 @@ header{
 .inner{
 	position: relative;
 	bottom: -120px;
-	left: -50px;
 }
 
 .statement{
+	position: relative;
 	background-color: rgba(0, 31, 63, 0.75);
+	left: -60px;
 	border-radius: 15px;
 	padding: 38px 48px;
 }
@@ -209,7 +215,8 @@ header{
 	font-weight: 400;
 	line-height: 30px;
 	color: rgb(179, 217, 255);
-	text-decoration: underline;
+	text-decoration: underline !important;
+	-webkit-font-size-adjust: 100%;
 	font-size-adjust: 100%;
 }
 
@@ -226,6 +233,10 @@ header{
 	max-width: 550px;
 	border-radius: 15px;
 	background-image: linear-gradient(rgb(255, 213, 30), rgb(223, 184, 27)); 
+}
+
+.schedule:hover{
+	background-image: linear-gradient(rgb(223, 184, 27), rgb(223, 184, 27));
 }
 
 .schedule a:hover, a:link{
@@ -259,6 +270,12 @@ header{
 	font-size-adjust: 100%;
 }
 
+.schedule i{
+	position: absolute;
+	right: 20px;
+	color: #fff;
+}
+
 section{
 	width: 100%;
 	height: 800px;
@@ -290,21 +307,21 @@ footer{
 	border-bottom-left-radius: 15px;
 }
 
-.banner:hover{
+.box:hover > .banner{
 	background-color: #003e7a;
 	text-decoration: none;
 }
 
 .banner span{
 	position: relative;
-	left: 20px;
+	padding-left: 20px;
 	top: 12px;
 	color: #fff;
 	font-size: 24px;
 	font-weight: 700;
 }
 
-.banner i{
+i.icon{
 	position: relative;
 	top: 18px;
 	left: -10px;
@@ -365,10 +382,34 @@ footer{
 	color: rgb(0, 77, 142);
 }
 
+.special-btn{
+	display: inline-block;
+	position: relative;
+	top: -50%;
+	transform: translateY(-40%);
+	float: right;
+	margin-right: 30px;
+	padding: 17px 20px 19px 30px;
+	background-image: linear-gradient(rgb(255, 213, 30), rgb(223, 184, 27)); 
+	color: rgb(48, 48, 48);
+	font-size: 24px;
+	line-height: 26.4px;
+	border-radius: 15px;
+}
+
+.centered{
+	display: block;
+	position: relative;
+	top: -42px;
+	margin: 0 auto;
+	width: 175px;
+	height: 77px;
+
+}
+
 .footer-box{
 	width: 100%;
-	height: 350px;
-	margin-top: 20px;
+	height: 300px;
 	border-radius: 15px;
 }
 
@@ -378,15 +419,105 @@ footer{
 	background-size: cover;
 }
 
+.content{
+	position: absolute;
+	max-width: 554px;/*//Fixes bootstrap overflow bug//*/
+	bottom: 0;
+}
+
+.priority-banner{
+	position: relative;
+	height: 65px;
+	background-color: rgb(0, 77, 142);
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	color: #fff;
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.priority-banner span{
+	position: relative;
+	padding-left: 32px;
+	top: 12px;
+	color: #fff;
+	font-size: 24px;
+	font-weight: 700;
+}
+
+#priority-message{
+	color: #fff;
+	font-size: 26px;
+	font-weight: 700;
+	padding: 10px 32px;
+	background-color: rgba(0, 31, 63, 0.75);
+}
+
 .priority:hover{
 	transform: scale(.99);
 	transition: 0.1s ease-in;
 }
 
+.priority:hover > .banner{
+	background-color: #003e7a;
+	text-decoration: none;
+}
+
 .contact{
 	background-image: url(https://morrisjenkins.com/img/footer-bg.jpg);
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: cover; 
+}
+
+.contact-message{
+	position: relative;
+	width: 100%;
+	top: 50%;
+	transform: translateY(-50%);
+	margin: 0 auto;
+	text-align: center;
+}
+
+.contact-message h5{
+	color: #fff;
+	font-size: 38px;
+	font-weight: 700;
+	height: 41px;
+	line-height: 41.8px;
+	margin-top: 0;
+	margin-bottom: 16px;
+}
+
+#review-link{
+	position: relative;
+	color: rgb(255, 213, 30);
+	display: inline-block;
+	font-size: 24px;
+	font-weight: 700;
+	height: 31px;
+	line-height: 31.2px;
+	margin-left: 16px;
+	margin-top: 16px;
+	top: -18px;
+	width: 169.281px;
+}
+
+.circle{
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	margin: 2px 5px;
+	border: 2px solid #ffd51e;
+	border-radius: 50%; 
+}
+
+.circle i{
+	position: relative;
+	text-align: center;
+	top: 50%;
+	margin-left: 5px;
+	transform: translateY(-50%);
+	font-size: 35px;
 }
 
 
