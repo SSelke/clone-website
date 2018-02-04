@@ -6,7 +6,7 @@
 	font-family: 'Cabin', sans-serif;
 }
 
-html,body{
+body, html{
 	background-color: #003e7a !important;
 }
 
@@ -175,13 +175,19 @@ header{
 	width: 100%;
 	height: 100%;
 	background-image: url('https://morrisjenkins.com/uploads/Banners/home-banner.jpg');
-	background-size: 100% auto;
+	background-size: 100%;
 	background-repeat: no-repeat;
 }
 
 .inner{
 	position: relative;
 	bottom: -120px;
+}
+
+.row{
+	margin-right: 0 !important;
+	margin-left: 0 !important;
+	max-width: 100%;
 }
 
 .statement{
@@ -275,6 +281,77 @@ header{
 	right: 20px;
 	color: #fff;
 }
+
+.min-telephone{
+	display: none;
+	background-color: #004d8e;
+}
+
+@media only screen and (max-width: 1100px) {
+	header{
+		height: 100%;
+	}
+	.upper-nav-container{
+		display: none;
+	}
+	.inner{
+		position: relative;
+		bottom: -150px;
+	}
+	.container{
+		margin: 0 !important;
+		padding: 0 !important;
+		width: 100% !important;
+	}
+	.statement{
+		width: 100%;
+		border-radius: 0;
+		padding: 10px 30px;
+		left: 0;
+	}
+	.statement h1{
+		font-size: 30px;
+		line-height: 1.2;
+		padding: 0;
+	}
+	.schedule{
+		position: relative;
+		margin: 0;
+		width: 100%;
+		max-width: 100%;
+		border-radius: 0;
+		padding: 32px 48px 32px 24px;
+	}
+	.schedule span:nth-child(1){
+		font-size: 20px;
+		line-height: 31px;
+	}
+
+	.schedule span:nth-child(2){
+		font-size: 28px;
+		font-weight: 700;
+		line-height: 41px;
+	}
+
+	.schedule span:nth-child(3){
+		font-size: 20px;
+		line-height: 25px;
+	}
+
+	.schedule i{
+		position: absolute;
+		right: 18px;
+		color: #fff;
+	}
+	.min-telephone{
+		display: block;
+		width: 100%;
+		height: 100%;
+		padding: 20px 0px;
+		text-align: center;
+	}
+}
+
 
 section{
 	width: 100%;
