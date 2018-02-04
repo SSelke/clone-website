@@ -597,6 +597,17 @@ i.icon{
 	font-size: 35px;
 }
 
+.circle:hover{
+	transform: scale(1.1);
+	border-color: #fff;
+}
+
+.circle:hover i{
+	color: #fff;
+}
+
+
+
 
 
 
