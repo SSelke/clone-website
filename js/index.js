@@ -1,5 +1,6 @@
 
 $("#menu").on("click", function(){
+	$(".side-nav").fadeToggle('fast', "linear");
 	$(".side-nav").toggleClass("hidden");
 	checkHidden();
 });
@@ -28,8 +29,11 @@ $(".services-li").on("click", function(){
 function checkHidden(){
 	if($(".side-nav").hasClass("hidden")){
 		$("body,html").css("overflow", "visible");
+		$(".blur").css("filter", "none");
 	} else {
 		$("body,html").css("overflow", "hidden");
+			$(".blur").css("filter", "blur(2px)");
+			$(".side-nav").css("fliter", "none");
 	}
 }
 
