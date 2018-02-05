@@ -11,13 +11,17 @@
 body, html{
 	background-color: #003e7a !important;
 	height: 100%;
+	min-width: 340px;
 }
 /*//NAVBAR STYLING//*/
 .mobile-nav{
+	position: relative;
 	display: none;
 	width: 100%;
 	height: 60px;
 	background: rgb(0, 77, 142);
+	box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.5);
+	overflow: visible;
 }
 .mobile-nav img{
 	margin-left: 80px;
@@ -670,7 +674,6 @@ footer{
 		border-radius: 15px;
 	}
 	.priority-banner{
-		font-size: 18px;
 		padding: 5px 0;
 	}
 	.priority-banner span{
@@ -737,7 +740,6 @@ footer{
 		margin-right: 15px;
 	}
 }
-
 @media only screen and (max-width: 458px){
 	.mobile-nav img{
 		margin-left: 40px;
@@ -760,6 +762,14 @@ footer{
 	.priority-banner span{
 		padding-left: 26px;
 		font-size: 16px;
+	}
+}
+@media only screen and (max-width: 382px){
+	#priority-message{
+		font-size: 18px;
+	}
+	.footer-box{
+		margin-top: 40px;
 	}
 }
 
