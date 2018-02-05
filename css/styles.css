@@ -737,6 +737,31 @@ footer{
 	}
 }
 
+@media only screen and (max-width: 458px){
+	.mobile-nav img{
+		margin-left: 40px;
+	}
+	.statement h1{
+		font-size: 20px !important;
+		line-height: 1.2;
+		padding: 0;
+	}
+
+	.statement p{
+		font-size: 16px;
+		line-height: 1.1;
+	}
+
+	.footer-box{
+		margin-top: 20px;
+	}
+
+	.priority-banner span{
+		padding-left: 26px;
+		font-size: 16px;
+	}
+}
+
 
 
 
