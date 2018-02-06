@@ -455,6 +455,10 @@ footer{
 	margin-right: 15px;
 	bottom: 0;
 }
+
+.footer-box:hover > .content{
+	margin-right: 0;
+}
 .priority-banner{
 	position: relative;
 	height: 65px;
