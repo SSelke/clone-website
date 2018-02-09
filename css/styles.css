@@ -380,8 +380,7 @@ i.icon{
 	background-size: cover;
 }
 .troubleShoot{
-	background-image:url('https://morrisjenkins.com/uploads/Modules/_560xAUTO_crop_center-center/module-troubleshoot.jpg');
-	background-repeat: no-repeat;
+    background-image:url('https://morrisjenkins.com/uploads/module-troubleshoot.jpg');
 	background-size: cover;
 }
 .special{
