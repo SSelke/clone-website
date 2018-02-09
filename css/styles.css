@@ -576,11 +576,9 @@ footer{
 	nav .container{
 		background-color: rgb(0, 77, 142);
 	}
-
 	.inner-container{
-		position: absolute;
-		margin: 0 auto;
-		bottom: 0;
+		position: relative;
+		bottom: -155px;
 	}
 
 	.upper-nav-container{
@@ -743,6 +741,10 @@ footer{
 	}
 }
 @media only screen and (max-width: 620px){
+	.inner-container{
+		position: relative;
+		bottom: -190px;
+	}
 	.content{
 		position: relative;
 		bottom: -110px;
@@ -756,6 +758,10 @@ footer{
 @media only screen and (max-width: 458px){
 	.mobile-nav img{
 		margin-left: 40px;
+	}
+	.inner-container{
+		position: relative;
+		bottom: -220px;
 	}
 	.statement h1{
 		font-size: 20px !important;
